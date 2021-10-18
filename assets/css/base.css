@@ -1,0 +1,61 @@
+:root{
+    --white-corlor: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --star-gold: rgb(243, 215, 4);
+    --color-bg-headder: #202020;
+    --color-bg-body: #181818;
+
+}
+*{
+    box-sizing: border-box;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62,5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* responsive */
+.grid{
+    
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    
+}
+.grid__row-10{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    
+}
+.grid__column-2{
+    
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.grid__column-2-5{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 19%;
+}
+.grid__column-10{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 83.3333%;
+}
