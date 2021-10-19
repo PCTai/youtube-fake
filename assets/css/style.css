@@ -24,13 +24,14 @@
 }
 .nav-bar-icon{
     color: var(--white-corlor);
+    display: inline-block;
 
 }
 .nav-icon-yt{
     text-decoration: none;
     color: var(--white-corlor);
     font-size: 22px;
-    padding-left: 16px;
+    
 }
 .nav-icon-yt i{
     font-size: 24px;
@@ -41,6 +42,7 @@
     font-size: 18px;
     position: relative;
     top: -2px;
+    padding: 10px 24px 10px 0;
    
 }
 .nav-bar-search{
@@ -239,18 +241,22 @@
     width: 230px;
     background-color: var(--color-bg-headder);
     overflow-y: hidden;
-    
+    display: none;
 }
 .container-bar-left:hover{
     overflow: auto;
 }
 .container-bar-item{
-
-    font-size: 15px;
+    display: block;
+    font-size: 14px;
     padding-left: 24px;
     height: 40px;
     line-height: 40px;
     color: var(--white-corlor);
+    text-decoration: none;
+    padding-right: 24px;
+
+    
 }
 .container-bar-item:hover{
     background-color: rgb(47, 47, 47);
@@ -258,10 +264,26 @@
 #hover-click{
     background-color: rgb(84, 84, 84);
 }
-.container-bar-item a{
-    text-decoration: none;
-    color: var(--white-corlor);
-    margin-left: 16px;
+.container-bar-item img{
+    margin-right: 12px;
+    border-radius: 50%;
+    width: 24px;
+    position: relative;
+    top: 8px;
+}
+.new-ness-dot{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #3ea6ff;
+    margin: 0 6px;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: -10px;
+}
+.container-bar-item i{
+    margin-right: 16px;
 }
 .container-bar-border{
     border-top: 1px solid #383838;
@@ -270,6 +292,43 @@
 .container-bar-chanel{
     color: gray;
     padding-left: 24px;
-    font-size: 14px;
-    padding-right: 24px;
+    font-size: 13px;
+    
+}
+.container-bar-footer{
+    color: gray;
+    padding :0 24px;
+    font-size: 13px;
+}
+/* bar left min */
+.container-bar-left-min{
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    padding-top: 8px;
+    width: 72px;
+    background-color: var(--color-bg-headder);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.bar-left-min-item i{
+    font-size: 20px;
+}
+.bar-left-min-item:hover{
+    background-color: #383838;
+}
+.bar-left-min-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-corlor);
+    font-size: 10px;
+    padding: 16px 0 12px 0;
+    
 }
