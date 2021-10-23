@@ -10,33 +10,14 @@
     .container-bar-top{
         left: 0;
     }
-
-
-}
-@media (max-width:450px){
-    .nav-icon-yt{
-    
-        font-size: 18px;
-    }
-    .nav-bar-search{
-        display: none;
-    }
-    .nav-bar-tool .search-bar-icon--minw{
-        display: block ;
-    }
-    .search-bar-icon,.tool-bar-icon{
-        font-size: 16px;
-    }
-      /* bar left */
-      .container-bar-left-min{
-        display: none;
-    }
-    .container-bar-left{
-        display: none;
+    .grid__row .grid__column-4{
+        flex: 100% !important;
+        max-width: 100% !important;
     }
 
 }
-@media (min-width:451px) and (max-width: 765px){
+
+@media (max-width: 765px){
     .nav-bar-search{
         width: 30%  ;
     }
@@ -46,18 +27,29 @@
     .nav-bar-tool .search-bar-icon--minw{
         display: block ;
     }
-    .container-bar-left-min{
-        display: none;
-    }
     .container-bar-left{
         display: none;
     }
     /* bar top */
+    .container-bar-left-min{
+        display: none !important;
+    }
     .container-bar-top{
-        left: 0;
+        left: 0 !important;
+    }
+    #main-content{
+        margin-left: 0 !important;
+    }
+ 
+    
+}
+@media (max-width: 784px){
+    .grid__row .grid__column-4{
+        flex: 44% ;
+        max-width: 50% ;
     }
 }
-@media (min-width:766px) and (max-width: 1005px){
+@media  (max-width: 1005px){
       /* bar left */
     .container-bar-left-min{
         display: block;
@@ -69,6 +61,35 @@
     .container-bar-top{
         left: 72px;
     }
+    #bars-checkbox:checked ~ .container-bar-left{
+        display: none;
+    }
+    #bars-checkbox:checked ~ .container-bar-top{
+        left: 72px;
+    }
+    #bars-checkbox:checked ~ .container-bar-left-slide{
+        transform: translateX(0);
+        z-index: 20;
+        top: 0;
+        
+    }
+    #bars-checkbox:checked ~ .overlay{
+        display: block;
+        z-index: 19;
+        
+    }
+    #main-content{
+        margin-left: 72px;
+    }
+    .grid__column-4{
+        flex: 30%;
+        max-width: 30%;
+    }
+    #bars-checkbox:checked ~ .grid__column-4{
+        flex: 30%;
+        max-width: 30%;
+    
+    }
 }
 @media (min-width:1006px){
       /* bar left */
@@ -77,5 +98,17 @@
     }
     .container-bar-left{
         display: block;
+    }
+    #bars-checkbox:checked ~ .container-bar-left{
+        display: none;
+    }
+    #bars-checkbox:checked ~ .container-bar-top{
+        left: 72px;
+    }
+    #bars-checkbox:checked ~ .container-bar-left-min{
+        display: block;
+    }
+    #bars-checkbox:checked ~ #main-content{
+        margin-left: 72px;
     }
 }
